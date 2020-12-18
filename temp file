@@ -1,0 +1,28 @@
+kishor@kishor-MacBookPro:~/Desktop/C++ Development Root/SourceCode$ ./project_\(g++\).exe < "Open Library Database-tiny.dat" | tee output.txt
+Starting to collect Vector measurements
+
+ in IF 9993023736
+ in IF 9993023736
+ in IF 9993023736
+ in IF 9993023736
+ in IF 9993023736
+ in IF 9993023736
+ in IF 9993023736Timer: Vector measurements completed in 9.3157e-05 (seconds)
+
+Starting to collect Doubly Linked List measurements
+
+
+           //    int i = 0;
+            //    std::clog << "\nline1 " << i << " value of j " << j << " size " << dataStructureUnderTest.size();
+            //    i++;
+            //    std::clog << "\nline2 " << i << " value of j " << j << " End " << dataStructureUnderTest.end();
+            //    j++;
+        //std::clog << "Vector measurements!!" << dataStructureUnderTest.size() << " data " << dataStructureUnderTest[i].isbn() << "\n";
+           // return &dataStructureUnderTest[i++];
+            return nullptr;
+           // target_isbn = find(dataStructureUnderTest.begin(), dataStructureUnderTest.end(), [&](auto&) -> Book * );
+           //auto elementFound = find(dataStructureUnderTest.begin(), dataStructureUnderTest.end(), &target_isbn);
+           //if (elementFound != dataStructureUnderTest.end())
+           //{ return &(*elementFound);}
+           //else
+           // return nullptr;
