@@ -1,0 +1,139 @@
+164c164
+<            dataStructureUnderTest.push_back( book );
+---
+> 
+177c177
+<            dataStructureUnderTest.insert( dataStructureUnderTest.cbegin(), book );
+---
+> 
+190c190
+<            dataStructureUnderTest.pop_back();
+---
+> 
+203c203
+<            dataStructureUnderTest.erase( dataStructureUnderTest.cbegin() );
+---
+> 
+219,224c219
+<               for (auto ii = dataStructureUnderTest.begin(); ii != dataStructureUnderTest.end(); ii++)
+<                 {
+<                     if ((*ii).isbn() == target_isbn)
+<                         return &(*ii);
+<                 }
+<               return nullptr;
+---
+> 
+249c244
+<             dataStructureUnderTest.push_back( book );
+---
+> 
+262c257
+<            dataStructureUnderTest.push_front( book );
+---
+> 
+275c270
+<           dataStructureUnderTest.pop_back( );
+---
+> 
+288c283
+<           dataStructureUnderTest.pop_front( );
+---
+> 
+304,309c299
+<               for (auto ii = dataStructureUnderTest.begin(); ii != dataStructureUnderTest.end(); ii++)
+<                 {
+<                     if ((*ii).isbn() == target_isbn)
+<                         return &(*ii);
+<                 }
+<               return nullptr;
+---
+> 
+336,344c326
+<             if (dataStructureUnderTest.empty())
+<                { dataStructureUnderTest.push_front(book);}
+<             else
+<                {
+<                 auto it = dataStructureUnderTest.before_begin();
+<                 for (auto ii = dataStructureUnderTest.begin(); ii != dataStructureUnderTest.end(); ii++)
+<                 { it++; }
+<                 dataStructureUnderTest.insert_after(it, book);
+<                }
+---
+> 
+357c339
+<           dataStructureUnderTest.push_front(book);
+---
+> 
+378,392c360
+<             if (dataStructureUnderTest.empty())
+<                return;
+<             else
+<                {
+<                   auto predecessor = dataStructureUnderTest.before_begin();
+<                   auto current = dataStructureUnderTest.begin();
+<                   while (current != dataStructureUnderTest.end())
+<                   {
+<                      current++;
+<                      if (current == dataStructureUnderTest.end())
+<                         dataStructureUnderTest.erase_after(predecessor);
+<                      else
+<                         predecessor++;
+<                   }
+<                }
+---
+> 
+405c373
+<          dataStructureUnderTest.pop_front();
+---
+> 
+421,426c389
+<             for (auto ii = dataStructureUnderTest.begin(); ii != dataStructureUnderTest.end(); ii++)
+<               {
+<                   if ((*ii).isbn() == target_isbn)
+<                       return &(*ii);
+<               }
+<             return nullptr;
+---
+> 
+453c416
+<           dataStructureUnderTest.emplace(book.isbn(), book);
+---
+> 
+467c430
+<           dataStructureUnderTest.erase(book.isbn());
+---
+> 
+484,491c447
+<             auto search = dataStructureUnderTest.find(target_isbn);
+<             if (search != dataStructureUnderTest.end()) {
+<                return &search->second;
+<             }
+<             else
+<             {
+<                return nullptr;
+<             }
+---
+> 
+518c474
+<           dataStructureUnderTest.emplace(book.isbn(), book);
+---
+> 
+532c488
+<           dataStructureUnderTest.erase(book.isbn());
+---
+> 
+549,556c505
+<             auto search = dataStructureUnderTest.find(target_isbn);
+<             if (search != dataStructureUnderTest.end()) {
+<                return &search->second;
+<             }
+<             else
+<             {
+<                return nullptr;
+<             }
+---
+> 
+584c533
+< 
+---
+>   
